@@ -3,6 +3,7 @@ import math
 
 from qtpy import QtCore
 from qtpy import QtGui
+from qtpy.QtGui import QFont
 
 import labelme.utils
 
@@ -202,6 +203,7 @@ class Shape(object):
             path.addRect(point.x() - d / 2, point.y() - d / 2, d, d)
         elif shape == self.P_ROUND:
             path.addEllipse(point, d / 2.0, d / 2.0)
+            path.addText(point, QFont(), f'{i+1}')
         else:
             assert False, "unsupported vertex shape"
 
