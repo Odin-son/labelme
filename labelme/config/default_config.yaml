@@ -86,6 +86,8 @@ shortcuts:
   zoom_to_original: Ctrl+0
   fit_window: Ctrl+F
   fit_width: Ctrl+Shift+F
+  show: Ctrl+Shift+G
+  hide: Ctrl+Shift+H
 
   create_polygon: Ctrl+N
   create_rectangle: Ctrl+R
